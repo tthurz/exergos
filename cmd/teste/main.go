@@ -18,5 +18,17 @@ func main() {
 
 	v := float64(valor)
 
-	fmt.Printf("A metade de %v é: %v\n", valor, matematica.Metade(v))
+	fmt.Printf("\nA metade de %v é: %v\n", valor, matematica.Metade(v))
+
+	exercicio1()
+}
+
+func exercicio1() {
+	x := 42
+	y := "James Bound"
+	z := true
+	fmt.Printf("\n%v, %v, %v", x, y, z)
+	fmt.Printf("\n\n%v", x)
+	fmt.Printf("\n%v", y)
+	fmt.Printf("\n%v", z)
 }
