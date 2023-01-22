@@ -21,6 +21,7 @@ func main() {
 	fmt.Printf("\nA metade de %v é: %v\n", valor, matematica.Metade(v))
 
 	exercicio1()
+	exercicio2()
 }
 
 func exercicio1() {
@@ -31,4 +32,16 @@ func exercicio1() {
 	fmt.Printf("\n\n%v", x)
 	fmt.Printf("\n%v", y)
 	fmt.Printf("\n%v", z)
+}
+
+// variaveis para fazer o ex2
+var a int
+var b string
+var c bool
+
+func exercicio2() {
+
+	fmt.Printf("\na vale %v", a)
+	fmt.Printf("\nb vale %v", b)
+	fmt.Printf("\nv vale %v", c)
 }
