@@ -39,7 +39,7 @@ Repositório todo:
 
     git clone https://github.com/tthurz/exergos
 
-Apenas atualiar um repo:
+Apenas atualizar um repo:
 
     git pull
 
