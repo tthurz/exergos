@@ -22,6 +22,7 @@ func main() {
 
 	exercicio1()
 	exercicio2()
+	exercicio3()
 }
 
 func exercicio1() {
@@ -41,7 +42,16 @@ var c bool
 
 func exercicio2() {
 
-	fmt.Printf("\na vale %v", a)
+	fmt.Printf("\n\na vale %v", a)
 	fmt.Printf("\nb vale %v", b)
 	fmt.Printf("\nv vale %v", c)
+}
+
+func exercicio3() {
+	x := float64(42)
+	y := "James Bound"
+	z := true
+
+	s := fmt.Sprintf("\n\n%.2f %v %v", x, y, z)
+	fmt.Println(s)
 }
