@@ -24,6 +24,7 @@ func main() {
 	exercicio1()
 	exercicio2()
 	exercicio3()
+	exercicio4()
 	comparacao()
 }
 
@@ -58,11 +59,21 @@ func exercicio3() {
 	fmt.Println(s)
 }
 
+func exercicio4() {
+	type bolo int
+	var d bolo
+	fmt.Printf("O valor de d é %v e seu tipo: %T\n", d, d)
+	d = 42
+	fmt.Printf("Agora o valor de d é %v\n", d)
+}
+
+// Teste do if com meu pai
+
 func comparacao() {
 	x := rand.Intn(100)
 
 	if x < 50 {
-		fmt.Printf("%v: menor do que 50\n", x)
+		fmt.Printf("\n%v: menor do que 50\n", x)
 	} else {
 		fmt.Printf("%v: maior ou igual a 50\n", x)
 	}
