@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math/rand"
 
 	"github.com/tthurz/exergos/matematica"
 	"github.com/tthurz/exergos/util"
@@ -23,6 +24,7 @@ func main() {
 	exercicio1()
 	exercicio2()
 	exercicio3()
+	comparacao()
 }
 
 func exercicio1() {
@@ -52,6 +54,16 @@ func exercicio3() {
 	y := "James Bound"
 	z := true
 
-	s := fmt.Sprintf("\n\n%.2f %v %v", x, y, z)
+	s := fmt.Sprintf("\n\n%.2f %v %v\n", x, y, z)
 	fmt.Println(s)
+}
+
+func comparacao() {
+	x := rand.Intn(100)
+
+	if x < 50 {
+		fmt.Printf("%v: menor do que 50\n", x)
+	} else {
+		fmt.Printf("%v: maior ou igual a 50\n", x)
+	}
 }
