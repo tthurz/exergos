@@ -26,6 +26,10 @@ func main() {
 	exercicio3()
 	exercicio4()
 	comparacao()
+	condicional()
+	arthures(10)
+	ParOuImpar(10)
+	slice(7)
 }
 
 func exercicio1() {
@@ -73,8 +77,51 @@ func comparacao() {
 	x := rand.Intn(100)
 
 	if x < 50 {
-		fmt.Printf("\n%v: menor do que 50\n", x)
+		fmt.Printf("\n%v: menor do que 50\n\n", x)
 	} else {
-		fmt.Printf("%v: maior ou igual a 50\n", x)
+		fmt.Printf("%v: maior ou igual a 50\n\n", x)
 	}
+}
+
+func condicional() {
+	i := 5
+	if i < 100 {
+		fmt.Println("If")
+	} else {
+		fmt.Println("Else")
+	}
+}
+
+func arthures(n int) {
+
+	for i := 0; i < n; i++ {
+		fmt.Println("Arthur")
+
+	}
+}
+
+func ParOuImpar(n int) {
+	metade := n / 2
+	dobroDaMetade := metade * 2
+
+	par := dobroDaMetade == n
+
+	if par {
+		fmt.Println("par")
+	} else {
+		fmt.Println("impar")
+	}
+}
+
+func slice(n int) {
+
+	s := make([]int, n, n)
+
+	for i := 0; i < n; i++ {
+
+		s[i] = 14
+
+	}
+
+	fmt.Println(s)
 }
