@@ -12,7 +12,7 @@ Exemplo:
 
 ## Como compilar tudo
 
-   go install ./...
+    go install ./...
 
 ## Como usar o git
 
